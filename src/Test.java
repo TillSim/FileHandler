@@ -27,7 +27,7 @@ public abstract class Test {
         // JsonHandler
         String outputJsonPath = "output.json";
         Robot testRobot1 = new Robot("Rob",1024);
-        Human testHuman1 = new Human("Simon", 30);
+        Human testHuman1 = new Human("Simon", 30, "Night City", "Mainroad");
 
         JsonHandler<Robot> robotJsonHandler = new JsonHandler<>(new Robot());
         JsonHandler<Human> humanJsonHandler = new JsonHandler<>(new Human());
