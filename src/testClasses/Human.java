@@ -6,6 +6,12 @@ public class Human {
     private int age;
 
 
+    public Human(){
+        name = null;
+        age = 0;
+    }
+
+
     public Human(String name, int age) {
         this.name = name;
         this.age = age;

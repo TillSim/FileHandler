@@ -1,7 +1,5 @@
-package fileReader;
+package helpers;
 
-import com.google.gson.Gson;
-import testClasses.Human;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -54,22 +52,9 @@ public abstract class FileHandler {
     }
 
 
-    public static void writeJson(String path, Object object){
 
-        Gson gson = new Gson();
-        String json = gson.toJson(object);
 
-        writeFile(json,path);
 
-    }
-
-    public static Human readJson(String path){
-
-        String json = readFile(path);
-        Gson gson = new Gson();
-        return gson.fromJson(json, Human.class);
-
-    }
 
 
 }
